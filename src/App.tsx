@@ -11,6 +11,8 @@ import { errorCss } from './style/error'
 import Card from "./component/Card";
 import Animation from "./component/Animation";
 import Frame from "./component/Frame";
+import Screen from "./component/Screen";
+import Title from "./component/Title";
 function App() {
 
   return (
@@ -20,6 +22,8 @@ function App() {
           />
           <Frame>
               <Header/>
+              <Card title={<Title/>} children={<Screen/>}/>
+
               <Button text = "버튼1" variant = "small"/>
               <Button text = "버튼2" variant = "medium"/>
               <Button text = "버튼3" variant = "large"/>
@@ -30,7 +34,6 @@ function App() {
               <Colorfulladjustbar/>
               <Dots/>
               <p css={errorCss}> Failed to fizzle the frozzle.</p>
-              <Card title={"cardTitle"} children={<p>My child</p>}/>
               <Animation/>
           </Frame>
 

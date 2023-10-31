@@ -20,7 +20,7 @@ const Column = styled.div`
 `
 
 const Header= ()=> (
-    <div css={css`width: 100%;`}>
+    <div css={css`width: 100%; margin-bottom: 10px`}>
         <UpperRow>
             <Column/>
             <Column/>
