@@ -1,32 +1,27 @@
-import { css } from '@emotion/react'
 import styled from "@emotion/styled";
+import Switchwrapper from "./Switchwrapper";
+import {css} from "@emotion/react";
 
 const UpperRow = styled.div`
+  width:600px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 `
 
-const LowerRow = styled.div`
-  width: 100%;
-  height: 5px;
-  background-color: #BBB6B6;
-`
-
 const Column = styled.div`
-  height: 15px;
+  height: 40px;
   width: 5px;
   background-color: #BBB6B6;
 `
-
 const Header= ()=> (
-    <div css={css`width: 100%; margin-bottom: 10px`}>
         <UpperRow>
-            <Column/>
-            <Column/>
+            <div css={css`display: flex; align-items: center; justify-content: space-between; width: 120px; `}>
+                <Column/>
+                <Switchwrapper off = "OFF" on = "ON"/>
+            </div>
+                <Column/>
         </UpperRow>
-        <LowerRow/>
-    </div>
 );
 
 

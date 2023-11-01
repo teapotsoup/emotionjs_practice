@@ -1,13 +1,8 @@
 import { css } from '@emotion/react';
 
 const titleCss = {
-
-    // lineWrapper:css({
-    //    position:"relative"
-    // }),
-
     blueline:css({
-        height:'5px',
+        height:'4px',
         width:'100%',
         backgroundColor:'#3f4190',
         position:"relative",
@@ -15,7 +10,7 @@ const titleCss = {
     }),
 
     purpleline :css({
-        height:'5px',
+        height:'4px',
         width:'100%',
         backgroundColor:'#8f2263',
         marginBottom: '0px',
@@ -35,30 +30,34 @@ const titleCss = {
 
     title : css({
         color:"white",
-        fontSize:"15px",
-        height:"20px",
+        fontSize:"14px",
+        height:"17px",
         alignItems:'center',
         backgroundColor:'#6e7882',
+        paddingTop:'5px',
         paddingRight:'10px',
         paddingLeft:'10px',
         paddingBottom:'7px',
+        fontFamily: "GillSansMedium",
     })
 }
 const Title  = () => {
-    return <>
+    return(
+        <>
             <hr css={titleCss.purpleline}/>
             <hr css={titleCss.blueline}/>
-        <div css={titleCss.cover}>
-            <div css={titleCss.titleWrapper}>
-                <div css={titleCss.title}>
-                    {"DOT MATRIX WITH STEREO SOUND"}
+            <div css={titleCss.cover}>
+                <div css={titleCss.titleWrapper}>
+                    <div css={titleCss.title}>
+                        DOT MATRIX WITH STEREO SOUND
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
+    )
 
 
-
-    </>;
 };
+
 
 export default Title;

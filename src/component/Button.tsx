@@ -6,7 +6,7 @@ interface StyledButtonInterface {
 }
 
 interface StyledButtonReturnInterface {
-    fontSize:string, color:string ;
+    fontSize:string, color:string;
 }
 
 const sizeStyles: { [key: string]: StyledButtonReturnInterface } = {
@@ -25,9 +25,11 @@ const sizeStyles: { [key: string]: StyledButtonReturnInterface } = {
 };
 
 const StyledButton = styled.button<StyledButtonInterface>(({variant}) => ({
-    padding: '8px 16px', // Adjusted the padding
-    backgroundColor: 'hotpink',
-    borderRadius: '4px',
+    width:'80px',
+    height:'80px',
+    backgroundColor: '#8f2263',
+    borderRadius: '100%',
+    marginRight:'10px',
     fontWeight: 'bold',
     '&:hover': {
         color: 'white',

@@ -9,8 +9,9 @@ export type ButtonProps = {
     variant: string;
 };
 
-export type ContextProps = {
-    text: string;
+export type SwitchwrapperProps = {
+    off: string;
+    on: string;
 };
 
 

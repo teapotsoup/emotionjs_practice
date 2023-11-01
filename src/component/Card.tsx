@@ -5,9 +5,8 @@ const cardCss = {
     self: css({
         backgroundColor: '#6e7882',
         padding: '1rem',
-        marginBottom: '10px',
         width:'600px',
-        height:'500px',
+        height:'400px',
         borderRadius: '20px 20px 50px 9px',
         display:'flex',
         flexDirection:'column',
@@ -21,10 +20,13 @@ interface CardinterFace {
 
  const Card: React.FC<CardinterFace> = ({ title, children }) => {
     return (
-        <div css={cardCss.self}>
-            {title}
-            {children}
+        <div css={css`display: flex; justify-content: center`}>
+            <div css={cardCss.self}>
+                {title}
+                {children}
+            </div>
         </div>
+
     )
 }
 export default Card;

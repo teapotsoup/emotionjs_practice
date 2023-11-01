@@ -1,22 +1,49 @@
 import { css } from '@emotion/react';
+import styled from "@emotion/styled";
 
 
 const Screen  = () => {
-    return <div
-        css={css`
-          background: linear-gradient(217deg,
-      rgba(255, 0, 0, 0.8),
-      rgba(255, 0, 0, 0) 70.71%
-    ), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
-          
-          // #6c7a00;
-          width:400px;
-        height:200px;
-                border-radius: 20px 20px 50px 9px;
+    return(
+        <ScreenWrapper>
+            <div>
+                <Lamp/>
+                <Battery>
+                    BATTERY
+                </Battery>
+            </div>
+            <div
+                css={css`
+                background: linear-gradient(90deg, black 0.1%,#3C4400 2.9% ,#6c7a00 97%);
+                width:400px;
+                height:310px;
+                border-radius: 3px 3px 3px 3px;
                 margin-top: 10px;
         `}
-    />;
+            />
+        </ScreenWrapper>
+        )
+
+    ;
 };
+
+const ScreenWrapper = styled.div`
+    display: flex;
+    width: 100%;
+`
+
+const Lamp = styled.div`
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(170deg, black 20%, #525357 80%);
+  margin-top: 110px;
+  margin-left: 10px;
+  margin-right: 60px;
+  margin-bottom: 10px;
+`
+const Battery = styled.div`
+  color: white;
+  font-size: 12px;
+`
 
 export default Screen;

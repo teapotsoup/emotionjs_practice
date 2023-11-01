@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Nintendo";
+    src: url("./fonts/Nintendo.otf")
+}
+
+@font-face {
+    font-family: "Mario";
+    src: url("../src/fonts/TypefaceMario64-ywA93.otf")
+}
+
+@font-face {
+    font-family: "Need";
+    src: url("../src/fonts/NeedEverySoundBold-11yv.ttf")
+}
+
+
+@font-face {
+    font-family: "GillSansMediumItalic";
+    src: url("./fonts/GillSansMediumItalic.otf")
+}
