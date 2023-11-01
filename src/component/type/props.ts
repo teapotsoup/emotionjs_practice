@@ -9,6 +9,7 @@ export type ButtonProps = {
     variant: string;
 };
 
+
 export type SwitchwrapperProps = {
     off: string;
     on: string;

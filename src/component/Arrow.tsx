@@ -7,7 +7,6 @@ const rightArrowStyle = css`
   border-top: 5px solid transparent;
   border-bottom:5px solid transparent;
   border-left: 10px solid #BBB6B6;
-  
 `;
 
 const leftArrowStyle = css`
