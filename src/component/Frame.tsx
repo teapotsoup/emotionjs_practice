@@ -12,7 +12,7 @@ const Frame: React.FC<Frameinterface>  = ({children}) => {
         width: 700px;
         height: 860px;
         background: linear-gradient(90deg,#cfcfcf 0.1%, #E9EBED 2.9%, #cfcfcf 97%);
-        border-radius: 5px 5px 50px 9px;
+        border-radius: 5px 5px 150px 9px;
         display: flex;
         flex-direction: column;
         align-items: center;

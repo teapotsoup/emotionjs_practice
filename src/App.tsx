@@ -37,19 +37,19 @@ function App() {
                         <Buttonwrapperone>
                             <CrossBtn/>
                             <div css={css(`transform: rotate(-30deg); margin-top:35px; position: relative; z-index:1; display:flex; justify-content: center;`)}>
-                                <div css={css(`width: 180px;height: 70px; border-radius: 10px; box-shadow:inset 3px 3px 3px  #BBB6B6; `)}/>
+                                <div css={css(`width: 180px;height: 70px; border-radius: 30px; box-shadow:inset 3px 3px 3px  #BBB6B6; `)}/>
                                 <div css={css(`display:flex;  position: absolute; z-index:2;`)}>
                                     <Button text="B" variant="small"/>
                                     <Button text="A" variant="medium"/>
                                 </div>
                             </div>
                         </Buttonwrapperone>
-                        <div css={css(`margin-left:150px; display:flex`)}>
-                            <div css={css(`margin-top:30px; display:flex`)}>
+                        <div css={css(`margin-left:190px; display:flex`)}>
+                            <div css={css(`margin-top:25px; display:flex`)}>
                                 <Pillbtn text="SELECT" variant="small"/>
                                 <Pillbtn text="START" variant="medium"/>
                             </div>
-                            <div css={css(`margin-left:180px; margin-top:70px`)}>
+                            <div css={css(`margin-left:100px; margin-top:30px`)}>
                                 <Sixstick/>
                             </div>
                         </div>

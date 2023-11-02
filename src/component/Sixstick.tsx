@@ -6,7 +6,7 @@ const StickStyle = css`
   height: 90px;
   border-radius: 20px;
   background-color: #BBB6B6;
-  margin-right: 10px;
+  margin-right: 15px;
   box-shadow:inset 3px 3px 3px #333;
 `;
 

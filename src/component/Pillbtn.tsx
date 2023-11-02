@@ -34,12 +34,11 @@ const BtnWrapper = styled.div<BtnInterface>(({ variant }) => ({
     alignItems: 'center',
     transform: 'rotate(-30deg)',
     button: {
-        width: '80px',
+        width: '70px',
         height: '15px',
-        boxShadow: '0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 10px rgba(0, 0, 0, 0.08)',
-        backgroundColor: '#4d5a6e',
+        backgroundColor: '#898d90',
         borderRadius: '10px',
-        border: '1px solid #4d5a6e',
+        border: '1px solid black',
         fontWeight: 'bold',
         '&:hover': {
             color: 'white',
@@ -57,7 +56,9 @@ const BtnWrapper = styled.div<BtnInterface>(({ variant }) => ({
 const Pillbtn: React.FC<ButtonProps> = ({ text, variant }) => (
     <div css={css`display: flex;`}>
         <BtnWrapper variant={variant}>
-            <button/>
+            <div css={css(`border: 1px solid #4d5a6e; border-radius: 10px; width: 79px; height:25px; display:flex; justify-content: center; align-items:center; box-shadow:inset 2px 2px 2px  #BBB6B6;`)}>
+                <button/>
+            </div>
             <div>{text}</div>
         </BtnWrapper>
     </div>
