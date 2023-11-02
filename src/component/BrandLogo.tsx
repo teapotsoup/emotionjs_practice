@@ -16,14 +16,14 @@ const gameBoyStyle = css`
   font-size: 40px;
 `
 const tmStyle = css`
-  font-family: "GillSansMedium" !important;
+  font-family: "GillSansBold" !important;
   font-size: 15px;
-  margin-top: 25px;
+  margin-top: 28px;
 `
 
 const Card = () => {
     return (
-            <div css={css`display: flex`}>
+            <div css={css`display: flex; margin-bottom: 40px`}>
                 <div css={[textColor,nintendoStyle]}>
                     Nintendo
                 </div>
@@ -31,10 +31,9 @@ const Card = () => {
                     GAME BOY
                 </div>
                 <div css={[textColor,tmStyle]}>
-                    Tm
+                    TM
                 </div>
             </div>
-
     )
 }
 

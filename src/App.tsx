@@ -1,5 +1,5 @@
 import Button from "./component/Button";
-import Button2 from "./component/Button2";
+import CrossBtn from "./component/Btns/CrossBtn";
 import Header from "./component/Header";
 // import Dots from "./component/Dots";
 import {Global, css} from '@emotion/react'
@@ -13,16 +13,9 @@ import BrandLogo from "./component/BrandLogo";
 import ComponentWrapper from "./component/ComponentWrapper";
 import "./App.css"
 import Buttonwrapperone from "./component/Buttonwrapperone";
-import styled from "@emotion/styled";
+// import styled from "@emotion/styled";
 import Pillbtn from "./component/Pillbtn";
 import Sixstick from "./component/Sixstick";
-
-const LowerRow = styled.div`
-  width: 100%;
-  height: 10px;
-  background-color: #BBB6B6;
-  box-shadow:inset 3px 3px 3px dimgrey;
-`
 
 function App() {
 
@@ -32,41 +25,44 @@ function App() {
                 styles={css` Frame {
                   display: flex;
                   justify-content: center;
-                  align-items: center
+                  align-items: center;
                 }`}
             />
-            <Frame>
+            <div css={css`display: flex; flex-direction: column; align-items: center; margin-top: 20px`}>
                 <Header/>
-                <LowerRow/>
-                <ComponentWrapper>
-                    <Card title={<Title/>} children={<Screen/>}/>
-                    <BrandLogo/>
-                    <Buttonwrapperone>
-                        <Button2/>
-                        <div css={css(`margin-top:30px; display:flex`)}>
-                            <Button text="B" variant="small"/>
-                            <Button text="A" variant="medium"/>
+                <Frame>
+                    <ComponentWrapper>
+                        <Card title={<Title/>} children={<Screen/>}/>
+                        <BrandLogo/>
+                        <Buttonwrapperone>
+                            <CrossBtn/>
+                            <div css={css(`transform: rotate(-30deg); margin-top:35px; position: relative; z-index:1; display:flex; justify-content: center;`)}>
+                                <div css={css(`width: 180px;height: 70px; border-radius: 10px; box-shadow:inset 3px 3px 3px  #BBB6B6; `)}/>
+                                <div css={css(`display:flex;  position: absolute; z-index:2;`)}>
+                                    <Button text="B" variant="small"/>
+                                    <Button text="A" variant="medium"/>
+                                </div>
+                            </div>
+                        </Buttonwrapperone>
+                        <div css={css(`margin-left:150px; display:flex`)}>
+                            <div css={css(`margin-top:30px; display:flex`)}>
+                                <Pillbtn text="SELECT" variant="small"/>
+                                <Pillbtn text="START" variant="medium"/>
+                            </div>
+                            <div css={css(`margin-left:180px; margin-top:70px`)}>
+                                <Sixstick/>
+                            </div>
                         </div>
-                    </Buttonwrapperone>
-                    <div css={css(`margin-left:150px; display:flex`)}>
-                        <div css={css(`margin-top:30px; display:flex`)}>
-                            <Pillbtn text="SELECT" variant="small"/>
-                            <Pillbtn text="START" variant="medium"/>
-                        </div>
-                        <div css={css(`margin-left:180px; margin-top:70px`)}>
-                            <Sixstick/>
-                        </div>
-                    </div>
-                </ComponentWrapper>
+                    </ComponentWrapper>
 
 
-                {/*<Adjustbar/>*/}
-                {/*<Colorfulladjustbar/>*/}
-                {/*<Dots/>*/}
-                {/*<p css={errorCss}> Failed to fizzle the frozzle.</p>*/}
-                {/*<Animation/>*/}
-            </Frame>
-
+                    {/*<Adjustbar/>*/}
+                    {/*<Colorfulladjustbar/>*/}
+                    {/*<Dots/>*/}
+                    {/*<p css={errorCss}> Failed to fizzle the frozzle.</p>*/}
+                    {/*<Animation/>*/}
+                </Frame>
+            </div>
         </>
 
     )

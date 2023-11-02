@@ -6,7 +6,8 @@ const rightArrowStyle = css`
   height: 0;
   border-top: 5px solid transparent;
   border-bottom:5px solid transparent;
-  border-left: 10px solid #BBB6B6;
+  border-left: 10px solid #cfcfcf;
+  boxShadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 10px rgba(0, 0, 0, 0.08),
 `;
 
 const leftArrowStyle = css`
@@ -14,7 +15,8 @@ const leftArrowStyle = css`
   height: 0;
   border-top: 5px solid transparent;
   border-bottom:5px solid transparent;
-  border-right: 10px solid #BBB6B6;
+  border-right: 10px solid #cfcfcf;
+  boxShadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 10px rgba(0, 0, 0, 0.08),
 `;
 
 interface Arrowinterface {

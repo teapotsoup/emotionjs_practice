@@ -18,3 +18,8 @@
     font-family: "GillSansMediumItalic";
     src: url("./fonts/GillSansMediumItalic.otf")
 }
+
+@font-face {
+    font-family: "GillSansBold";
+    src: url("./fonts/Gill Sans Bold.otf")
+}

@@ -42,8 +42,8 @@ const Lamp = styled.div`
   margin-bottom: 10px;
 `
 const Battery = styled.div`
-  color: white;
-  font-size: 12px;
+  color:#d3cece;
+  font-size: 14px;
 `
 
 export default Screen;

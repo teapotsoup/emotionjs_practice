@@ -29,7 +29,7 @@ const titleCss = {
     }),
 
     title : css({
-        color:"white",
+        color:'#d3cece',
         fontSize:"14px",
         height:"17px",
         alignItems:'center',

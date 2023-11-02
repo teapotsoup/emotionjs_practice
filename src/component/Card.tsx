@@ -6,12 +6,14 @@ const cardCss = {
         backgroundColor: '#6e7882',
         padding: '1rem',
         width:'600px',
-        height:'400px',
+        height:'380px',
         borderRadius: '20px 20px 50px 9px',
         display:'flex',
         flexDirection:'column',
-        alignItems:'center'
-    }),
+        alignItems:'center',
+        border:'3px solid #BBB6B6',
+        boxShadow: 'inset 3px 3px 3px #5C5B5B',
+}),
 }
 interface CardinterFace {
     title : ReactNode
