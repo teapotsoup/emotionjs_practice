@@ -2,7 +2,7 @@ import  { useState, useEffect } from 'react';
 import { css } from "@emotion/react";
 import facepaint from 'facepaint';
 
-const breakpoints = [576, 768, 992, 1200];
+const breakpoints = [576, 768, 992];
 
 const mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
 const calculateDotCount = (viewportWidth:number) => {
@@ -10,10 +10,8 @@ const calculateDotCount = (viewportWidth:number) => {
         return 1;
     } else if (viewportWidth < breakpoints[1]) {
         return 2;
-    } else if (viewportWidth < breakpoints[2]) {
+    } else{
         return 3;
-    } else {
-        return 4;
     }
 };
 const Dots = () => {
@@ -38,10 +36,10 @@ const Dots = () => {
         <div
             key={index}
             css={mq({
-                width: '40px',
-                height: '40px',
+                width: '20px',
+                height: '20px',
                 borderRadius: '100%',
-                backgroundColor: ['green', 'gray', 'hotpink', 'red'][index],
+                backgroundColor: ['red', 'green', 'blue'][index],
                 marginRight:'10px',
             })}
         />
@@ -49,7 +47,10 @@ const Dots = () => {
 
     const containerStyles = css`
     margin-top: 10px;
-    display: flex;`
+    display: flex;
+    align-items: center;
+      justify-content: center;
+    `
 
     return (
         <div css={containerStyles}>
