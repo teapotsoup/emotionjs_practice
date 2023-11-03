@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from '@emotion/styled'; // styled-components처럼 사용하기
 import { css } from "@emotion/react";
 import { ButtonProps } from './type/props';
 
@@ -35,6 +35,7 @@ const BtnWrapper = styled.div<BtnInterface>(({ variant }) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+
     button: {
         width: '60px',
         height: '60px',

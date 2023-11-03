@@ -1,7 +1,7 @@
 import Button from "./component/Button";
 import CrossBtn from "./component/Btns/CrossBtn";
 import Header from "./component/Header";
-import {Global, css} from '@emotion/react'
+// import {Global, css} from '@emotion/react';
 import Card from "./component/Card";
 import Frame from "./component/Frame";
 import Screen from "./component/Screen";
@@ -12,18 +12,24 @@ import Buttonwrapperone from "./component/Buttonwrapperone";
 import Pillbtn from "./component/Pillbtn";
 import Sixstick from "./component/Sixstick";
 import "./App.css"
+import {
+    BtnWrapper,
+    GameConsoleWrapper,
+    WholeWrapper,
+    Oval,
+    PurpleBtnWrapper,
+    BottomWrapper,
+    PillBtnsWrapper, SixSticksWrapper
+} from "./css/app_css";
 
 
 function App() {
     return (
-        <div css={css`display: flex;justify-content: center`}>
-            <Global
-                styles={css` Frame {
-                  justify-content: center;
-                  align-items: center;
-                }`}
-            />
-            <div css={css`display: flex; flex-direction: column; align-items: center; margin-top: 20px`}>
+        <div css={WholeWrapper}>
+            {/*<Global*/}
+            {/*    styles={css` *{margin: 0px; }`}*/}
+            {/*/>*/}
+            <div css={GameConsoleWrapper}>
                 <Header/>
                 <Frame>
                     <ComponentWrapper>
@@ -31,20 +37,20 @@ function App() {
                         <BrandLogo/>
                         <Buttonwrapperone>
                             <CrossBtn/>
-                            <div css={css(`transform: rotate(-30deg); margin-top:35px; position: relative; z-index:1; display:flex; justify-content: center;`)}>
-                                <div css={css(`width: 180px;height: 70px; border-radius: 30px; box-shadow:inset 3px 3px 3px  #BBB6B6;`)}/>
-                                <div css={css(`display:flex;  position: absolute; z-index:2;`)}>
+                            <div css={BtnWrapper}>
+                                <div css={Oval}/>
+                                <div css={PurpleBtnWrapper}>
                                     <Button text="B" variant="small"/>
                                     <Button text="A" variant="medium"/>
                                 </div>
                             </div>
                         </Buttonwrapperone>
-                        <div css={css(`margin-left:190px; display:flex`)}>
-                            <div css={css(`margin-top:25px; display:flex`)}>
+                        <div css={BottomWrapper}>
+                            <div css={PillBtnsWrapper}>
                                 <Pillbtn text="SELECT" variant="small"/>
                                 <Pillbtn text="START" variant="medium"/>
                             </div>
-                            <div css={css(`margin-left:100px; margin-top:30px`)}>
+                            <div css={SixSticksWrapper}>
                                 <Sixstick/>
                             </div>
                         </div>

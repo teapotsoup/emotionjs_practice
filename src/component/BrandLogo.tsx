@@ -3,7 +3,6 @@ import { css } from '@emotion/react'
 const textColor = css`
   color: #3f4190;
 `
-
 const nintendoStyle = css`
   font-family: "Nintendo" ;
   font-size: 20px;
@@ -36,7 +35,5 @@ const Card = () => {
             </div>
     )
 }
-
-
 
 export default Card;
