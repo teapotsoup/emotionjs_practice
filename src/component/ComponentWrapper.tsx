@@ -7,7 +7,7 @@ interface ComponentWrapperinterface{
 
 const ComponentWrapper: React.FC<ComponentWrapperinterface>  = ({children}) => {
     return (
-        <div css={css`display: flex;flex-direction: column; width: 610px; margin-top: 25px`}>
+        <div css={css`display: flex;flex-direction: column; width:450px; margin-top: 25px`}>
             {children}
         </div>
     )

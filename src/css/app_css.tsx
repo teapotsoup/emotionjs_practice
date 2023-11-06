@@ -35,7 +35,7 @@ export const PurpleBtnWrapper = css`
 `;
 
 export const BottomWrapper = css`
-  margin-left:190px; 
+  margin-left:130px; 
   display:flex
 `
 export const PillBtnsWrapper = css`
@@ -44,6 +44,6 @@ export const PillBtnsWrapper = css`
 `
 
 export const SixSticksWrapper = css`
-  margin-left:100px; 
-  margin-top:30px
+  margin-left:10px; 
+  margin-top:40px
 `

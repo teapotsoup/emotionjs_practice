@@ -1,7 +1,8 @@
 import { css } from '@emotion/react'
+import {Color} from "../styles/theme";
 
 const textColor = css`
-  color: #3f4190;
+  color: ${Color.BlueColor} ;
 `
 const nintendoStyle = css`
   font-family: "Nintendo" ;

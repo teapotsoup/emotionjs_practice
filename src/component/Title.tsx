@@ -1,51 +1,54 @@
 import { css } from '@emotion/react';
+import styled from "@emotion/styled";
+import {Color} from "../styles/theme"
+
+const Line = styled("hr")`
+    height:3px; 
+    width:98%; 
+    position:relative;
+    border:0;
+    margin: 0 0 7px 0;
+`;
+
+const Blueline = styled(Line)`
+  background-color: ${Color.BlueColor} ;
+`;
+
+const Purpleline = styled(Line)`
+  background-color:${Color.PurpleColor};
+`;
+
 
 const titleCss = {
-    blueline:css({
-        height:'4px',
-        width:'100%',
-        backgroundColor:'#3f4190',
-        position:"relative",
-        border:0,
-    }),
-
-    purpleline :css({
-        height:'4px',
-        width:'100%',
-        backgroundColor:'#8f2263',
-        marginBottom: '0px',
-        position:"relative",
-        border:0,
-    }),
-
     cover: css({
         width:"420px",
-        position:'absolute'
+        position:'absolute',
     }),
 
     titleWrapper : css({
         display:"flex",
         justifyContent:'flex-end',
+        position:"relative",
     }),
 
     title : css({
         color:'#d3cece',
-        fontSize:"14px",
-        height:"17px",
-        alignItems:'center',
+        fontSize:"13px",
+        height:"30px",
         backgroundColor:'#6e7882',
-        paddingTop:'5px',
         paddingRight:'10px',
         paddingLeft:'10px',
-        paddingBottom:'7px',
+        top:'-4px',
+        left:'135px',
         fontFamily: "GillSansMedium",
+        position:"absolute",
     })
 }
 const Title  = () => {
     return(
         <>
-            <hr css={titleCss.purpleline}/>
-            <hr css={titleCss.blueline}/>
+            <Purpleline/>
+            <Blueline/>
             <div css={titleCss.cover}>
                 <div css={titleCss.titleWrapper}>
                     <div css={titleCss.title}>
@@ -53,10 +56,9 @@ const Title  = () => {
                     </div>
                 </div>
             </div>
+
         </>
     )
-
-
 };
 
 

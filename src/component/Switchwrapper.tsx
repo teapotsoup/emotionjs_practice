@@ -12,8 +12,8 @@ const switchcover = css`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border-radius: 10px;
-
+  border-radius: 15px;
+  padding: 0px 2px 0px 2px;
   span {
     cursor: pointer;
     font-size: 12px;

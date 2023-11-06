@@ -1,6 +1,6 @@
 import Button from "./component/Button";
 import CrossBtn from "./component/Btns/CrossBtn";
-import Header from "./component/Header";
+import TopHead from "./component/TopHead";
 // import {Global, css} from '@emotion/react';
 import Card from "./component/Card";
 import Frame from "./component/Frame";
@@ -30,7 +30,7 @@ function App() {
             {/*    styles={css` *{margin: 0px; }`}*/}
             {/*/>*/}
             <div css={GameConsoleWrapper}>
-                <Header/>
+                <TopHead/>
                 <Frame>
                     <ComponentWrapper>
                         <Card title={<Title/>} children={<Screen/>}/>

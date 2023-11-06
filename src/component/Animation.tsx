@@ -37,7 +37,7 @@ const Animation = () => {
         align-items: center;
       `}
         >
-            <img src={dot_mario} alt="mario"  width='64' height='64' />
+            <img src={dot_mario} alt="mario"  width='32' height='32' />
                 Loading!
         </div>
     );

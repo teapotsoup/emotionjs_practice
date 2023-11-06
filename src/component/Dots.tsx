@@ -36,11 +36,14 @@ const Dots = () => {
         <div
             key={index}
             css={mq({
-                width: '20px',
-                height: '20px',
+                width: '10px',
+                height: '10px',
                 borderRadius: '100%',
                 backgroundColor: ['red', 'green', 'blue'][index],
-                marginRight:'10px',
+                display:'flex',
+                justifyContent:'space-between',
+                alignItems:'center',
+                margin:'5px'
             })}
         />
     ));

@@ -5,8 +5,8 @@ const cardCss = {
     self: css({
         backgroundColor: '#6e7882',
         padding: '1rem',
-        width:'600px',
-        height:'380px',
+        width:'450px',
+        height:'330px',
         borderRadius: '20px 20px 50px 9px',
         display:'flex',
         flexDirection:'column',
