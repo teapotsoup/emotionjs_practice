@@ -73,6 +73,7 @@ const Lamp = styled.div`
 const Battery = styled.div`
   color:#d3cece;
   font-size: 13px;
+  fontFamily: "GillSansLight";
 `
 
 export default Screen;

@@ -1,25 +1,49 @@
 @font-face {
     font-family: "Nintendo";
-    src: url("./fonts/Nintendo.otf")
+    src: url("./fonts/Pretendo.ttf")
 }
 
 @font-face {
-    font-family: "Mario";
-    src: url("../src/fonts/TypefaceMario64-ywA93.otf")
+    font-family: "GillSansMedium";
+    src: url("./fonts/Gill Sans Medium.otf")
 }
 
 @font-face {
-    font-family: "Need";
-    src: url("../src/fonts/NeedEverySoundBold-11yv.ttf")
+    font-family: "GillSansLight";
+    src: url("./fonts/Gill Sans Light.otf")
 }
 
+@font-face {
+    font-family: "GillSansLightItalic";
+    src: url("./fonts/Gill Sans Light Italic.otf")
+}
 
 @font-face {
     font-family: "GillSansMediumItalic";
-    src: url("./fonts/GillSansMediumItalic.otf")
+    src: url("./fonts/Gill Sans Medium Italic.otf")
+}
+
+@font-face {
+    font-family: "GillSansBoldItalic";
+    src: url("./fonts/Gill Sans Bold Italic.otf")
+}
+
+@font-face {
+    font-family: "GillSansHeavyItalic";
+    src: url("./fonts/Gill Sans Heavy Italic.otf")
+}
+
+@font-face {
+    font-family: "GillSans";
+    src: url("./fonts/Gill Sans.otf")
 }
 
 @font-face {
     font-family: "GillSansBold";
     src: url("./fonts/Gill Sans Bold.otf")
+}
+
+@font-face {
+    font-family: "Righteous-Regular";
+    src: url("./fonts/Righteous-Regular.ttf")
 }

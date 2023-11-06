@@ -40,9 +40,9 @@ const titleCss = {
         paddingLeft:'10px',
         top:'-4px',
         left:'135px',
-        fontFamily: "GillSansMedium",
+        fontFamily: "GillSansLight",
         position:"absolute",
-    })
+})
 }
 const Title  = () => {
     return(

@@ -22,7 +22,7 @@ export const BtnWrapper = css`
 `;
 
 export const Oval = css`
-  width: 180px;
+  width: 170px;
   height: 70px; 
   border-radius: 30px; 
   box-shadow:inset 3px 3px 3px  #BBB6B6;

@@ -50,6 +50,7 @@ const BtnWrapper = styled.div<BtnInterface>(({ variant }) => ({
         marginTop: '3px',
         color: '#3f4190',
         fontWeight: 'bold',
+        fontFamily:'Righteous-Regular'
     },
 }));
 

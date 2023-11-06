@@ -3,8 +3,9 @@ import styled from "@emotion/styled";
 import Arrow from "../Arrow";
 
 const WrapperStyle = css`
-  width: 160px;
-  height: 160px;
+  width: 145px;
+  height: 145px;
+  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +16,7 @@ const WrapperStyle = css`
 `
 
 const VerticalArrowWrapperStyle = css`
-  height: 160px;
+  height: 145px;
   width: 15px;
   display: flex;
   flex-direction: column;
@@ -25,7 +26,7 @@ const VerticalArrowWrapperStyle = css`
 `
 
 const horizontalArrowWrapperStyle = css`
-  width: 160px;
+  width: 145px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +34,7 @@ const horizontalArrowWrapperStyle = css`
   z-index: 2;
 `
 const horizontalBaseStyle = css`
-  width:130px;
+  width:115px;
   height: 45px;
   background-color: black;
   border-radius: 5px;
@@ -46,7 +47,7 @@ const horizontalBaseStyle = css`
 
 const VerticalBaseStyle = css`
   width: 45px;
-  height: 130px;
+  height: 115px;
   background-color: black;
   border-radius: 5px;
   display: flex;
@@ -58,7 +59,7 @@ const VerticalBaseStyle = css`
 
 const VerticalElementStyle = css`
   width: 35px;
-  height: 115px;
+  height: 100px;
   border-right: 1px solid #282727;
   border-left: 1px solid white;
   border-top:  1px solid #282727;
@@ -73,7 +74,7 @@ const VerticalElementStyle = css`
 `;
 
 const horizontalElementStyle = css`
-  width: 115px;
+  width: 100px;
   height: 30px;
   border-left: 1px solid white;
   border-radius: 5px;
@@ -119,15 +120,15 @@ const StickStyle = styled("div")`
 `
 
 const HorizontalStick = styled(StickStyle)`
-  width: 10px; height: 28px;
+  width: 7px; height: 28px;
 `
 
 const  VerticalStick = styled(StickStyle)`
-  width: 28px; height: 10px;
+  width: 28px; height: 7px;
 `
 
 const CircleStyle = css`
-  width: 30px; height: 30px; background: linear-gradient(270deg,#282727 25%, #cfcfcf 20%, #282727 55%); border-radius: 100%;
+  width: 27px; height: 27px; background: linear-gradient(270deg,#282727 25%, #cfcfcf 20%, #282727 55%); border-radius: 100%;
   border-right: 1px solid white;
 `
 

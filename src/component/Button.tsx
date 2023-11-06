@@ -11,7 +11,7 @@ interface BtnWrapperInterface {
 const btnStyles: { [key: string]: BtnWrapperInterface } = {
     small: {
         marginTop: '0px',
-        marginRight: '45px',
+        marginRight: '30px',
         boxShadow: '10px -5px 10px rgba(50, 50, 93, 0.11), 15px -10px 15px rgba(0, 0, 0, 0.08)',
     },
     medium: {
@@ -55,7 +55,7 @@ const BtnWrapper = styled.div<BtnInterface>(({ variant }) => ({
     div: {
         ...textStyles[variant],
         color: '#3f4190',
-        fontFamily: "GillSansBold",
+        fontFamily: "Righteous-Regular",
         fontSize: '20px',
     },
 }));

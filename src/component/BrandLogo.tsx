@@ -6,7 +6,7 @@ const textColor = css`
 `
 const nintendoStyle = css`
   font-family: "Nintendo" ;
-  font-size: 16px;
+  font-size: 20px;
   margin-top: 20px;
 `
 const gameBoyStyle = css`
@@ -15,9 +15,9 @@ const gameBoyStyle = css`
   font-size: 40px;
 `
 const tmStyle = css`
-  font-family: "GillSansBold" !important;
-  font-size: 15px;
-  margin-top: 22px;
+  font-family: "GillSansMedium" !important;
+  font-size: 12px;
+  margin-top: 25px;
 `
 
 const Card = () => {
