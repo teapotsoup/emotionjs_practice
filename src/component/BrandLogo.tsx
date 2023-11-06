@@ -6,19 +6,18 @@ const textColor = css`
 `
 const nintendoStyle = css`
   font-family: "Nintendo" ;
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 20px;
 `
 const gameBoyStyle = css`
   font-family: "GillSansMediumItalic" !important;
   margin-left: 5px;
-  margin-top: 5px;
   font-size: 40px;
 `
 const tmStyle = css`
   font-family: "GillSansBold" !important;
   font-size: 15px;
-  margin-top: 28px;
+  margin-top: 22px;
 `
 
 const Card = () => {

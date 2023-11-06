@@ -5,16 +5,19 @@ import { ButtonProps } from './type/props';
 interface BtnWrapperInterface {
     marginTop: string;
     marginRight: string;
+    boxShadow:string;
 }
 
 const btnStyles: { [key: string]: BtnWrapperInterface } = {
     small: {
         marginTop: '0px',
         marginRight: '45px',
+        boxShadow: '10px -5px 10px rgba(50, 50, 93, 0.11), 15px -10px 15px rgba(0, 0, 0, 0.08)',
     },
     medium: {
         marginTop: '0px',
         marginRight: '0px',
+        boxShadow: '5px -4px 6px rgba(50, 50, 93, 0.11), 10px -8px 8px rgba(0, 0, 0, 0.08)',
     },
 };
 
@@ -39,7 +42,6 @@ const BtnWrapper = styled.div<BtnInterface>(({ variant }) => ({
     button: {
         width: '60px',
         height: '60px',
-        boxShadow: '0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 10px rgba(0, 0, 0, 0.08)',
         backgroundColor: '#8f2263',
         borderRadius: '100%',
         border: '1px solid black',

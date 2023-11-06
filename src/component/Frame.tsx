@@ -8,7 +8,7 @@ interface Frameinterface {
 
 const FrameCase = css`
   width: 560px;
-  height: 860px;
+  height: 820px;
   background: linear-gradient(90deg,#cfcfcf 0.1%, #E9EBED 2.9%, #cfcfcf 97%);
   border-radius: 5px 5px 150px 9px;
   display: flex;

@@ -25,7 +25,7 @@ const Screen  = () => {
                 </div>
                 <div
                 css={css`
-                background: linear-gradient(180deg, black 0.1%, rgb(255,255,255,0.1) 2.9% , rgb(255,255,255,0.1) 93%);
+                background: linear-gradient(180deg, black 0.1%, rgb(255,255,255,0.1) 4.9% , rgb(255,255,255,0.1) 95%);
                 width:290px;
                 height:290px;
                 border-radius: 3px 3px 3px 3px;
@@ -36,7 +36,7 @@ const Screen  = () => {
                 </div>
                 <div
                 css={css`
-                background: linear-gradient(90deg, black 0.5%,#3C4400 4.5% ,#6c7a00 95%);
+                background: linear-gradient(90deg, black 3%,#3C4400 5% ,#6c7a00 92%);
                 width:290px;
                 height:290px;
                 border-radius: 3px 3px 3px 3px;
